@@ -84,8 +84,8 @@
       }
     },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/UniswapV2Pair.sol": {
-      "lastModificationDate": 1649500569052,
-      "contentHash": "1df7d0c913a2de3ba7a6b16fccb9f363",
+      "lastModificationDate": 1649543542264,
+      "contentHash": "8fcde84674130a3c02ca8d74d12eefae",
       "sourceName": "contracts/UniswapV2Pair.sol",
       "solcConfig": {
         "settings": {
@@ -476,8 +476,8 @@
       }
     },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/UniswapV2Pair.t.sol": {
-      "lastModificationDate": 1649542808810,
-      "contentHash": "11a477dc87988c6ba83c05a780ae6a36",
+      "lastModificationDate": 1649543469141,
+      "contentHash": "c9f86934f446eeaa2532163c06b74f8b",
       "sourceName": "contracts/test/UniswapV2Pair.t.sol",
       "solcConfig": {
         "settings": {
@@ -503,6 +503,7 @@
       },
       "imports": [
         "contracts/UniswapV2ERC20.sol",
+        "contracts/UniswapV2Factory.sol",
         "contracts/UniswapV2Pair.sol",
         "contracts/interfaces/IERC20.sol",
         "contracts/interfaces/IUniswapV2Callee.sol",

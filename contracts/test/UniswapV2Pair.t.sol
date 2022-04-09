@@ -2,6 +2,7 @@ pragma solidity =0.5.16;
 
 import "./ERC20.sol";
 import "../UniswapV2Pair.sol";
+import "../UniswapV2Factory.sol";
 import "../libraries/UniswapV2Library.sol";
 import "../test/test.sol";
 import "../test/VM.sol";
@@ -15,6 +16,7 @@ contract UniswapV2PairTest is DSTest {
     /*                               MOCK CONTRACTS                               */
     /* -------------------------------------------------------------------------- */
 
+    UniswapV2Factory factory;
     UniswapV2Pair pair;
     ERC20 dai;
     ERC20 cnv;
@@ -27,12 +29,13 @@ contract UniswapV2PairTest is DSTest {
 
     function setUp() public {
         // setup test contracts
-        dai  = new ERC20(1010e18);
-        cnv  = new ERC20(1000e18);
-        pair = new UniswapV2Pair();
+        dai     = new ERC20(1010e18);
+        cnv     = new ERC20(1000e18);
+        factory = new UniswapV2Factory(address(this));
+
+        pair    = UniswapV2Pair(factory.createPair(address(dai), address(cnv)));
         
-        // initialize & transfer initial liquidity to pair
-        pair.initialize(address(dai), address(cnv));
+        // transfer initial liquidity to pair
         dai.transfer(address(pair), 1000e18);
         cnv.transfer(address(pair), 1000e18);
 
@@ -70,7 +73,7 @@ contract UniswapV2PairTest is DSTest {
         dai.transfer(address(pair), 1e18);
 
         // swap 1 dai for amountOut of cnv, should not fail
-        pair.swap(0, amountOut, address(this), new bytes(0));
+        pair.swap(amountOut, 0, address(this), new bytes(0));
     }
 
     function test_getAmountOut_expect_failure() public {
@@ -82,7 +85,7 @@ contract UniswapV2PairTest is DSTest {
 
         // swap 1 dai for amountOut plus 1 wei of cnv, should fail on invariant check
         vm.expectRevert("UniswapV2: K");
-        pair.swap(0, amountOut + 1, address(this), new bytes(0));
+        pair.swap(amountOut + 1, 0, address(this), new bytes(0));
     }
 
     // I found this test odd, should there ever be a case where a fee is not charged?
@@ -110,7 +113,7 @@ contract UniswapV2PairTest is DSTest {
         dai.transfer(address(pair), amountIn);
         
         // swap amoutnIn of dai for 1 cnv, should not fail
-        pair.swap(0, 1e18, address(this), new bytes(0));
+        pair.swap(1e18, 0, address(this), new bytes(0));
     }
 
     function test_getAmountIn_expect_failure() public {
@@ -122,6 +125,6 @@ contract UniswapV2PairTest is DSTest {
         
         // swap amoutnIn of dai for 1 cnv plus 1 wei, should fail on invariant check
         vm.expectRevert("UniswapV2: K");
-        pair.swap(0, 1e18 + 1, address(this), new bytes(0));
+        pair.swap(1e18 + 1, 0, address(this), new bytes(0));
     }
 }
