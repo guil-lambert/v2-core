@@ -84,8 +84,8 @@
       }
     },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/UniswapV2Pair.sol": {
-      "lastModificationDate": 1649498347276,
-      "contentHash": "b30e458738d491ae4d9500c9a989c946",
+      "lastModificationDate": 1649500569052,
+      "contentHash": "1df7d0c913a2de3ba7a6b16fccb9f363",
       "sourceName": "contracts/UniswapV2Pair.sol",
       "solcConfig": {
         "settings": {
@@ -400,8 +400,8 @@
       }
     },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/libraries/UniswapV2Library.sol": {
-      "lastModificationDate": 1649498449482,
-      "contentHash": "9f02aea82bc48f0a0af933510e10aaeb",
+      "lastModificationDate": 1649541538128,
+      "contentHash": "2cd83f77ceb4ada9b97061fd4fcae381",
       "sourceName": "contracts/libraries/UniswapV2Library.sol",
       "solcConfig": {
         "settings": {
@@ -476,8 +476,8 @@
       }
     },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/UniswapV2Pair.t.sol": {
-      "lastModificationDate": 1649499188852,
-      "contentHash": "0eb4559aa5531a108d79cad9863b1bc4",
+      "lastModificationDate": 1649542808810,
+      "contentHash": "11a477dc87988c6ba83c05a780ae6a36",
       "sourceName": "contracts/test/UniswapV2Pair.t.sol",
       "solcConfig": {
         "settings": {
@@ -513,7 +513,9 @@
         "contracts/libraries/SafeMath.sol",
         "contracts/libraries/UQ112x112.sol",
         "contracts/libraries/UniswapV2Library.sol",
-        "contracts/test/ERC20.sol"
+        "contracts/test/ERC20.sol",
+        "contracts/test/VM.sol",
+        "contracts/test/test.sol"
       ],
       "versionRequirement": "=0.5.16",
       "artifacts": {
@@ -522,9 +524,43 @@
         }
       }
     },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/VM.sol": {
+      "lastModificationDate": 1649542524321,
+      "contentHash": "4f9348d7524d6ee571cb8457d7299543",
+      "sourceName": "contracts/test/VM.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "VM": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "VM.sol/VM.json"
+        }
+      }
+    },
     "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/test.sol": {
-      "lastModificationDate": 1649491169340,
-      "contentHash": "82a8604fe648c30a9bd56444368704f0",
+      "lastModificationDate": 1649541831549,
+      "contentHash": "44e2ea41a1f23d2ad873b3c35ab655a1",
       "sourceName": "contracts/test/test.sol",
       "solcConfig": {
         "settings": {

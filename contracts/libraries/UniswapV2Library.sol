@@ -65,7 +65,7 @@ library UniswapV2Library {
         require(amountIn > 0, 'UniswapV2Library: INSUFFICIENT_INPUT_AMOUNT');
         require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
         // target IV = 100%
-        uint256 amountInWithFee = amountIn.mul(uint256(290273).sub(Math.sqrt(amountIn.mul(reserveIn).mul(timeElapsed))));
+        uint256 amountInWithFee = amountIn.mul(290273).sub(Math.sqrt(amountIn.mul(reserveIn).mul(timeElapsed)));
         uint256 numerator = amountInWithFee.mul(reserveOut);
         uint256 denominator = reserveIn.mul(290273).add(amountInWithFee);
         amountOut = numerator / denominator;
@@ -82,7 +82,7 @@ library UniswapV2Library {
         require(reserveIn > 0 && reserveOut > 0, 'UniswapV2Library: INSUFFICIENT_LIQUIDITY');
         // target IV = 100%
         uint256 numerator = reserveIn.mul(amountOut).mul(290273);
-        uint256 denominator = reserveOut.sub(amountOut).mul(uint256(290273).sub(Math.sqrt(amountIn.mul(reserveIn).mul(timeElapsed))));
+        uint256 denominator = reserveOut.sub(amountOut).mul(290273).sub(Math.sqrt(amountIn.mul(reserveIn).mul(timeElapsed)));
         amountIn = (numerator / denominator).add(1);
     }
 
