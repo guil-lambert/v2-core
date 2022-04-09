@@ -1,0 +1,560 @@
+{
+  "_format": "ethers-rs-sol-cache-2",
+  "files": {
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/UniswapV2ERC20.sol": {
+      "lastModificationDate": 1649489230671,
+      "contentHash": "91a2001b4697613fd016ad98df162eff",
+      "sourceName": "contracts/UniswapV2ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/interfaces/IUniswapV2ERC20.sol",
+        "contracts/libraries/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2ERC20": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2ERC20.sol/UniswapV2ERC20.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/UniswapV2Factory.sol": {
+      "lastModificationDate": 1649489230671,
+      "contentHash": "d11e6f227d62998403ec093773bfa291",
+      "sourceName": "contracts/UniswapV2Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/UniswapV2ERC20.sol",
+        "contracts/UniswapV2Pair.sol",
+        "contracts/interfaces/IERC20.sol",
+        "contracts/interfaces/IUniswapV2Callee.sol",
+        "contracts/interfaces/IUniswapV2ERC20.sol",
+        "contracts/interfaces/IUniswapV2Factory.sol",
+        "contracts/interfaces/IUniswapV2Pair.sol",
+        "contracts/libraries/Math.sol",
+        "contracts/libraries/SafeMath.sol",
+        "contracts/libraries/UQ112x112.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2Factory": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Factory.sol/UniswapV2Factory.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/UniswapV2Pair.sol": {
+      "lastModificationDate": 1649498347276,
+      "contentHash": "b30e458738d491ae4d9500c9a989c946",
+      "sourceName": "contracts/UniswapV2Pair.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/UniswapV2ERC20.sol",
+        "contracts/interfaces/IERC20.sol",
+        "contracts/interfaces/IUniswapV2Callee.sol",
+        "contracts/interfaces/IUniswapV2ERC20.sol",
+        "contracts/interfaces/IUniswapV2Factory.sol",
+        "contracts/interfaces/IUniswapV2Pair.sol",
+        "contracts/libraries/Math.sol",
+        "contracts/libraries/SafeMath.sol",
+        "contracts/libraries/UQ112x112.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2Pair": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Pair.sol/UniswapV2Pair.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1649489230673,
+      "contentHash": "2290ca2ec74690ed9024d986955ef431",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IERC20": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/interfaces/IUniswapV2Callee.sol": {
+      "lastModificationDate": 1649489230673,
+      "contentHash": "dee30d5845c0662c462da74fbe109539",
+      "sourceName": "contracts/interfaces/IUniswapV2Callee.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Callee": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "IUniswapV2Callee.sol/IUniswapV2Callee.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/interfaces/IUniswapV2ERC20.sol": {
+      "lastModificationDate": 1649489230674,
+      "contentHash": "605345701334b98242fd4108573ae444",
+      "sourceName": "contracts/interfaces/IUniswapV2ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2ERC20": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "IUniswapV2ERC20.sol/IUniswapV2ERC20.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1649489230674,
+      "contentHash": "51d78f670a7cb6d7aa4d8096f82a99c6",
+      "sourceName": "contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Factory": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "IUniswapV2Factory.sol/IUniswapV2Factory.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1649489230674,
+      "contentHash": "d021d78f40daea7a0f06e1d2eed0e968",
+      "sourceName": "contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "IUniswapV2Pair": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "IUniswapV2Pair.sol/IUniswapV2Pair.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/libraries/Math.sol": {
+      "lastModificationDate": 1649489230675,
+      "contentHash": "807b5a3ee256f814ef1aeb0996fd9a85",
+      "sourceName": "contracts/libraries/Math.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "Math": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "Math.sol/Math.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1649489230675,
+      "contentHash": "acf692d86aa69bcd2fe982bd93189262",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "SafeMath": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "SafeMath.sol/SafeMath.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1649489230675,
+      "contentHash": "b4c8a4d6e325bff8a4002ae0681eb036",
+      "sourceName": "contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UQ112x112": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UQ112x112.sol/UQ112x112.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/libraries/UniswapV2Library.sol": {
+      "lastModificationDate": 1649498449482,
+      "contentHash": "9f02aea82bc48f0a0af933510e10aaeb",
+      "sourceName": "contracts/libraries/UniswapV2Library.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/interfaces/IUniswapV2Pair.sol",
+        "contracts/libraries/Math.sol",
+        "contracts/libraries/SafeMath.sol"
+      ],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "UniswapV2Library": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Library.sol/UniswapV2Library.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1649489230676,
+      "contentHash": "5da3646d8bb418f39a51cc5b61c8b988",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/UniswapV2ERC20.sol",
+        "contracts/interfaces/IUniswapV2ERC20.sol",
+        "contracts/libraries/SafeMath.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "ERC20": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "ERC20.sol/ERC20.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/UniswapV2Pair.t.sol": {
+      "lastModificationDate": 1649499188852,
+      "contentHash": "0eb4559aa5531a108d79cad9863b1bc4",
+      "sourceName": "contracts/test/UniswapV2Pair.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [
+        "contracts/UniswapV2ERC20.sol",
+        "contracts/UniswapV2Pair.sol",
+        "contracts/interfaces/IERC20.sol",
+        "contracts/interfaces/IUniswapV2Callee.sol",
+        "contracts/interfaces/IUniswapV2ERC20.sol",
+        "contracts/interfaces/IUniswapV2Factory.sol",
+        "contracts/interfaces/IUniswapV2Pair.sol",
+        "contracts/libraries/Math.sol",
+        "contracts/libraries/SafeMath.sol",
+        "contracts/libraries/UQ112x112.sol",
+        "contracts/libraries/UniswapV2Library.sol",
+        "contracts/test/ERC20.sol"
+      ],
+      "versionRequirement": "=0.5.16",
+      "artifacts": {
+        "UniswapV2PairTest": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "UniswapV2Pair.t.sol/UniswapV2PairTest.json"
+        }
+      }
+    },
+    "/mnt/c/Users/ggere/Desktop/aliens/v2-core/contracts/test/test.sol": {
+      "lastModificationDate": 1649491169340,
+      "contentHash": "82a8604fe648c30a9bd56444368704f0",
+      "sourceName": "contracts/test/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ]
+            }
+          },
+          "evmVersion": "london"
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.5.16+commit.9c3226ce.Linux.gcc": "test.sol/DSTest.json"
+        }
+      }
+    }
+  }
+}

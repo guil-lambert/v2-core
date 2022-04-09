@@ -1,0 +1,6 @@
+[default]
+src = 'contracts'
+out = 'artifacts'
+libs = ['node_modules']
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
